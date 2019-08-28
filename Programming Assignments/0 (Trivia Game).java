@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.PrintStream;
 
-class Main {
+class trivia {
   static final PrintStream out = System.out;
   static final Scanner in = new Scanner(System.in);
   public static void main(String[] args) {
