@@ -37,13 +37,13 @@ Verify that Alice B. Toklas was removed from names, but not from names2.
 import java.util.*;
 import java.io.PrintStream;
 
-class lab1 {
+class Main {
   static final PrintStream out = System.out;
   static final Scanner in = new Scanner(System.in);
   public static void main(String[] args) {
 
     //Alice, Bob, Connie, David, Edward, Fran, Gomez, Harry
-    ArrayList<String> names = new ArrayList<>();
+    ArrayList<String> names = new ArrayList();
     names.add("Alice");
     names.add("Bob");
     names.add("Connie");
@@ -69,7 +69,7 @@ class lab1 {
       out.println("Name " + i + ": " + names.get(i));
     }
     out.println("");
-    ArrayList<String> names2 = new ArrayList<>(names);
+    ArrayList<String> names2 = new ArrayList(names);
 
     names.remove(0);
 
