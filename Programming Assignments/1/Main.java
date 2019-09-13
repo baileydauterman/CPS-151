@@ -9,16 +9,19 @@ class Main {
     Random r = new Random();
     comboLock cl = new comboLock();
 
+    //define variables
     int s1 = r.nextInt(39);
     int s2 = r.nextInt(39);
     int s3 = r.nextInt(39);
     int i = 0;
     String tryAgain = "n";
 
+    //set the combination to the combolock
     cl.setSecret1(s1);
     cl.setSecret2(s2);
     cl.setSecret3(s3);
     
+    //do while loop that will run until the user wants to stop trying to break the lock
     do {
       if (cl.isOpen()) {
         out.println("Congrats you have unlocked the lock!");
